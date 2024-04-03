@@ -58,7 +58,7 @@ for(i in 1:length(mod_vec)){
   mod_ls_original[[i]] = mod
 }
 
-local_cluster <- makeCluster(detectCores() - 1)   
+local_cluster <- makeCluster(14)   
 registerDoParallel(local_cluster)
 
 for(i in 1:length(mod_vec)){
