@@ -97,7 +97,7 @@ results <- function(train_mod){
 table1_tbl <- as_tibble(t(sapply(mod_ls_original, results))) 
 table2_tbl <- tibble(algorithm = mod_vec,
                      supercomputer = original_time, 
-                     "supercomputer-14" = parallel_time)
+                     "supercomputer_14" = parallel_time)
 
 write_csv(table1_tbl, "../out/table3.csv")
 write_csv(table2_tbl, "../out/table4.csv")
