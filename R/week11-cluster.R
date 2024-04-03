@@ -101,3 +101,9 @@ table2_tbl <- tibble(algorithm = mod_vec,
 
 write_csv(table1_tbl, "table3.csv")
 write_csv(table2_tbl, "table4.csv")
+
+# The ranger model benefited most dramatically from the transition to the supercomputer, as indicated by a drastic reduction in computational time
+# The use of more cores on the supercomputer has demonstrated a clear reduction in computational times across models
+# Considering the balance between computational efficiency and model performance from both environments, the ranger model remains a strong candidate for production due to its high holdout score and substantial benefit from parallelization on the supercomputer. While xgbTree shows the best improvement and high accuracy, the ranger model provides a more practical blend of computational time reduction and predictive performance, making it suitable for real-world applications where both factors are critical
+
+
