@@ -99,5 +99,5 @@ table2_tbl <- tibble(algorithm = mod_vec,
                      supercomputer = original_time, 
                      "supercomputer_14" = parallel_time)
 
-write_csv(table1_tbl, "../out/table3.csv")
-write_csv(table2_tbl, "../out/table4.csv")
+write_csv(table1_tbl, "table3.csv")
+write_csv(table2_tbl, "table4.csv")
